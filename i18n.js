@@ -17,13 +17,18 @@
 'use strict';
 
 
-let
-  ls = require('fs').readdirSync,
-  quote = (string) => `'${string}'`,
-  contains = (string, substring) => string.indexOf(substring) !== -1;
+let i18n = require("i18n");
 
-console.log('Available locales:',
-  ls(`${__dirname}/locales`)
-    .filter((f) => contains(f, '.json') && f != 'package.json')
-    .map((f) => quote(f.replace('.json', '')))
-    .join(', '));
+i18n.configure({
+
+    locales : ['en', 'es'],
+    defaultLocale : 'en',
+
+    directory : __dirname + '/locales',
+
+    updateFiles: false,
+    syncFiles: false
+
+});
+
+module.exports = i18n;

@@ -8,10 +8,19 @@ Trait names translated to different languages.
 
 ## Usage
 
-Require translation files as needed.
+Use trait-names i18n translator
+
+```
+let translator = require('trait-names/i18n');
+
+translator.setLocale('es');
+console.log(translator.__('Extraversion'));
+```
+
+or require translation files as needed.
 
 ```
 let
-  english_names = require('trait-names/en'),
-  spanish_names = require('trait-names/es');
+  english_names = require('trait-names/locales/en'),
+  spanish_names = require('trait-names/locales/es');
 ```
