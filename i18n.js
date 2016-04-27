@@ -17,18 +17,52 @@
 'use strict';
 
 
-let i18n = require("i18n");
+let _ = require('underscore');
 
-i18n.configure({
+class I18n {
+  constructor() {
+    this.dictionaries = {};
+    this.locales = {};
+    this.locale = '';
+  }
+
+  configure(options) {
+    this.defaultLocale = options.defaultLocale;
+    this.locales = _.object(options.locales.map((locale) => [locale, locale]));
+
+    options.locales.forEach((locale) => {
+      this.dictionaries[locale] = require(`${options.directory}/${locale}.json`);
+    });
+  }
+
+  setLocale(locale) {
+    this.locale = locale;
+  }
+
+  getLocale() {
+    return this.locale;
+  }
+
+  getCatalog() {
+    let locale = this.locales[this.locale] || this.defaultLocale;
+    return this.dictionaries[locale];
+  }
+
+  __(string) {
+    let catalog = this.getCatalog();
+    return catalog[string] || string;
+  }
+}
+
+let translator = new I18n();
+
+translator.configure({
 
     locales : ['en', 'es'],
     defaultLocale : 'en',
 
-    directory : __dirname + '/locales',
-
-    updateFiles: false,
-    syncFiles: false
+    directory : __dirname + '/locales'
 
 });
 
-module.exports = i18n;
+module.exports = translator;

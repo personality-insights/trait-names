@@ -31,6 +31,17 @@ describe('i18n', () => {
     done();
   });
 
+  it('translate trait name with unknown locale', function(done) {
+    let i18n  = require('../i18n');
+    i18n.setLocale('zz');
+    assert.equal(i18n.getLocale(), 'zz');
+
+    assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
+    assert.equal(i18n.__('Neuroticism'), 'Emotional range');
+
+    done();
+  });
+
   it('translate trait name into spanish', (done) => {
     let i18n  = require('../i18n');
     i18n.setLocale('es');
