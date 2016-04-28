@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha"
+    "test": "npm run jshint && (npm run codecov || true)",
+    "jshint": "jshint --exclude ./node_modules/",
+    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,9 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
+    "istanbul": "^0.4.3",
+    "jshint": "^2.9.2",
     "mocha": "^2.4.5"
   }
 }

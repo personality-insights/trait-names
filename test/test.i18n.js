@@ -26,7 +26,7 @@ describe('i18n', () => {
     assert.equal(i18n.getLocale(), 'en');
 
     assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
-    assert.equal(i18n.__('Neuroticism'), 'Emotional range');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
 
     done();
   });
@@ -37,7 +37,7 @@ describe('i18n', () => {
     assert.equal(i18n.getLocale(), 'zz');
 
     assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
-    assert.equal(i18n.__('Neuroticism'), 'Emotional range');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
 
     done();
   });
@@ -48,7 +48,7 @@ describe('i18n', () => {
     assert.equal(i18n.getLocale(), 'es');
 
     assert.equal(i18n.__('Agreeableness'), 'Amabilidad');
-    assert.equal(i18n.__('Neuroticism'), 'Rango emocional');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Rango emocional');
 
     done();
   });
