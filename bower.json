@@ -1,0 +1,27 @@
+{
+  "name": "personality-trait-names",
+  "description": "Obtain trait names for IBM Watson Personality Insights traits.",
+  "main": "index.js",
+  "authors": [
+    "Ary Pablo Batista <arypbatista@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "trait",
+    "names",
+    "personality",
+    "personality",
+    "insights",
+    "translated",
+    "i18n"
+  ],
+  "homepage": "https://github.com/personality-insights/trait-names",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
