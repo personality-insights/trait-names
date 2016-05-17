@@ -17,22 +17,12 @@
 'use strict';
 
 
-let _ = require('underscore');
+const _ = require('underscore');
+const PersonalityTraitNames = require('./lib/personality-trait-names');
 
-class I18n {
+class I18nDeprecated {
   constructor() {
-    this.dictionaries = {};
-    this.locales = {};
     this.locale = '';
-  }
-
-  configure(options) {
-    this.defaultLocale = options.defaultLocale;
-    this.locales = _.object(options.locales.map((locale) => [locale, locale]));
-
-    options.locales.forEach((locale) => {
-      this.dictionaries[locale] = require(`${options.directory}/${locale}.json`);
-    });
   }
 
   setLocale(locale) {
@@ -44,25 +34,17 @@ class I18n {
   }
 
   getCatalog() {
-    let locale = this.locales[this.locale] || this.defaultLocale;
-    return this.dictionaries[locale];
+    const traitNames = new PersonalityTraitNames({ locale: this.locale });
+    return traitNames._data;
   }
 
-  __(string) {
-    let catalog = this.getCatalog();
-    return catalog[string] || string;
+  __(traitId) {
+    const traitNames = new PersonalityTraitNames({ locale: this.locale });
+    return traitNames.name(traitId);
   }
 }
 
-let translator = new I18n();
+let translator = new I18nDeprecated();
 
-translator.configure({
-
-    locales : ['en', 'es'],
-    defaultLocale : 'en',
-
-    directory : __dirname + '/locales'
-
-});
-
+console.warn('I18n entrypoint is deprecated. Include component directly and use \'name\' method. See the README.md for more information.');
 module.exports = translator;
