@@ -23,6 +23,7 @@ const source     = require('vinyl-source-stream');
 const rename     = require('gulp-rename');
 const log        = require('winston');
 const uglify     = require('gulp-uglify');
+const sequence   = require('run-sequence');
 
 
 const capitalize = (word) => word[0].toUpperCase() + word.slice(1);
@@ -44,11 +45,11 @@ gulp.task('build-dist-min', () =>
 
 gulp.task('build-dist', () =>
   bundle()
-    .pipe(rename(`${component.name}.js`))
+    .pipe(source(`${component.name}.js`))
     .pipe(gulp.dest('dist'))
 );
 
-gulp.task('build', ['build-dist', 'build-dist-min'])
+gulp.task('build', () => sequence('build-dist', 'build-dist-min'))
 
 gulp.task('info', () => log.info('Build this package with command `gulp build`'));
 
