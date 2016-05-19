@@ -42,4 +42,11 @@ describe('names', () => {
     assert.equal(traitNames.names()[1], 'Altruismo');
   });
 
+  it('get Japanese trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'ja' });
+    assert.equal(traitNames.name('Agreeableness'), '人当たりの良さ');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], '利他主義');
+  });
+
 });
