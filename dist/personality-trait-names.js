@@ -19,7 +19,7 @@
 
 module.exports = require('./lib/personality-trait-names');
 
-},{"./lib/personality-trait-names":6}],2:[function(require,module,exports){
+},{"./lib/personality-trait-names":7}],2:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -40,10 +40,11 @@ module.exports = require('./lib/personality-trait-names');
 
 module.exports = {
   'en': require('./en'),
-  'es': require('./es')
+  'es': require('./es'),
+  'ja': require('./ja')
 };
 
-},{"./en":3,"./es":4}],3:[function(require,module,exports){
+},{"./en":3,"./es":4,"./ja":6}],3:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -65,7 +66,7 @@ module.exports = {
 
 module.exports = require('../../locales/en');
 
-},{"../../locales/en":7}],4:[function(require,module,exports){
+},{"../../locales/en":8}],4:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -87,7 +88,7 @@ module.exports = require('../../locales/en');
 
 module.exports = require('../../locales/es');
 
-},{"../../locales/es":8}],5:[function(require,module,exports){
+},{"../../locales/es":9}],5:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -137,7 +138,29 @@ var I18nData = function () {
 
 module.exports = I18nData;
 
-},{"./dictionaries":2,"underscore":9}],6:[function(require,module,exports){
+},{"./dictionaries":2,"underscore":11}],6:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/ja');
+
+},{"../../locales/ja":10}],7:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -200,7 +223,7 @@ module.exports = function () {
   return _class;
 }();
 
-},{"./i18n":5,"underscore":9}],7:[function(require,module,exports){
+},{"./i18n":5,"underscore":11}],8:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Agreeableness",
   "Altruism" : "Altruism",
@@ -258,7 +281,7 @@ module.exports={
   "Self-transcendence" : "Self-transcendence"
 }
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Amabilidad",
   "Altruism" : "Altruismo",
@@ -316,7 +339,65 @@ module.exports={
   "Self-transcendence" : "Autotranscendencia"
 }
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "人当たりの良さ",
+  "Altruism" : "利他主義",
+  "Cooperation" : "協調性",
+  "Modesty" : "謙虚さ",
+  "Morality" : "Uncompromising",
+  "Sympathy" : "共感度",
+  "Trust" : "信用度",
+  "Conscientiousness" : "勤勉さ",
+  "Achievement striving" : "達成努力",
+  "Cautiousness" : "注意深さ",
+  "Dutifulness" : "忠実さ",
+  "Orderliness" : "秩序性",
+  "Self-discipline" : "自制力",
+  "Self-efficacy" : "自己効力感",
+  "Extraversion" : "外向性",
+  "Activity level" : "活発度",
+  "Assertiveness" : "自己主張",
+  "Cheerfulness" : "明朗性",
+  "Excitement-seeking" : "刺激希求性",
+  "Friendliness" : "友情",
+  "Gregariousness" : "社交性",
+  "Neuroticism" : "繊細さ",
+  "Anger" : "激情的",
+  "Anxiety" : "心配性",
+  "Depression" : "悲観的",
+  "Immoderation" : "利己的",
+  "Self-consciousness" : "自意識過剰",
+  "Vulnerability" : "低ストレス耐性",
+  "Openness" : "好奇心の強さ",
+  "Adventurousness" : "大胆性",
+  "Artistic interests" : "芸術的関心度",
+  "Emotionality" : "情動性",
+  "Imagination" : "想像力",
+  "Intellect" : "思考力",
+  "Liberalism" : "現状打破",
+
+  "Liberty" : "自由",
+  "Ideal" : "理想",
+  "Love" : "愛",
+  "Practicality" : "現実性",
+  "Self-expression" : "自己表現",
+  "Stability" : "安定",
+  "Structure" : "組織",
+  "Challenge" : "挑戦",
+  "Closeness" : "親密さ",
+  "Curiosity" : "好奇心",
+  "Excitement" : "興奮",
+  "Harmony" : "調和",
+
+  "Conservation" : "保守性",
+  "Hedonism" : "快楽主義",
+  "Openness to change" : "変化に対する許容性",
+  "Self-enhancement" : "自己高揚",
+  "Self-transcendence" : "自己超越"
+}
+
+},{}],11:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
