@@ -21,7 +21,7 @@ const PersonalityTraitNames  = require('../');
 
 describe('names', () => {
 
-  it('get trait name', () => {
+  it('get default (English) trait name', () => {
     const traitNames = new PersonalityTraitNames();
     assert.equal(traitNames.name('Agreeableness'), 'Agreeableness');
     assert.equal(traitNames.names().length, 52);
@@ -39,14 +39,65 @@ describe('names', () => {
     const traitNames = new PersonalityTraitNames({ locale : 'es' });
     assert.equal(traitNames.name('Agreeableness'), 'Amabilidad');
     assert.equal(traitNames.names().length, 52);
-    assert.equal(traitNames.names()[1], 'Altruismo');
+    assert.equal(traitNames.names()[1], 'Responsabilidad');
   });
 
   it('get Japanese trait name', () => {
     const traitNames = new PersonalityTraitNames({ locale : 'ja' });
-    assert.equal(traitNames.name('Agreeableness'), '人当たりの良さ');
+    assert.equal(traitNames.name('Agreeableness'), '協調性');
     assert.equal(traitNames.names().length, 52);
-    assert.equal(traitNames.names()[1], '利他主義');
+    assert.equal(traitNames.names()[1], '誠実性');
   });
+
+  it('get Arabic trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'ar' });
+    assert.equal(traitNames.name('Agreeableness'), 'الوئام');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], 'الاجتهاد');
+  });
+
+  it('get Chinese trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'zh' });
+    assert.equal(traitNames.name('Agreeableness'), '宜人性');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], '尽责性');
+  });
+
+  it('get Chinese (Taiwan) trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'zh-tw' });
+    assert.equal(traitNames.name('Agreeableness'), '親和性');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], '盡責性');
+  });
+
+  it('get Deutch trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'de' });
+    assert.equal(traitNames.name('Agreeableness'), 'Angenehme Wesenszüge');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], 'Pflichtbewusstsein');
+  });
+
+  it('get Italian trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'it' });
+    assert.equal(traitNames.name('Agreeableness'), 'Disponibilità');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], 'Scrupolosità');
+  });
+
+  it('get Portuguese (Brazil) trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'pt-br' });
+    assert.equal(traitNames.name('Cooperation'), 'Cooperação');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], 'Escrupulosidade');
+  });
+
+  it('get French trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'fr' });
+    assert.equal(traitNames.name('Agreeableness'), 'Amabilité');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], 'Tempérament consciencieux');
+  });
+
+
 
 });
