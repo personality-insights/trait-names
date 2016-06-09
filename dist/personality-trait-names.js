@@ -19,7 +19,51 @@
 
 module.exports = require('./lib/personality-trait-names');
 
-},{"./lib/personality-trait-names":7}],2:[function(require,module,exports){
+},{"./lib/personality-trait-names":14}],2:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/ar');
+
+},{"../../locales/ar":15}],3:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/de');
+
+},{"../../locales/de":16}],4:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -41,10 +85,18 @@ module.exports = require('./lib/personality-trait-names');
 module.exports = {
   'en': require('./en'),
   'es': require('./es'),
-  'ja': require('./ja')
+  'ja': require('./ja'),
+  'ar': require('./ar'),
+  'it': require('./it'),
+  'de': require('./de'),
+  'zh': require('./zh'),
+  'zh-tw': require('./zh-tw'),
+  'fr': require('./fr'),
+  'pt-br': require('./pt-br')
+
 };
 
-},{"./en":3,"./es":4,"./ja":6}],3:[function(require,module,exports){
+},{"./ar":2,"./de":3,"./en":5,"./es":6,"./fr":7,"./it":9,"./ja":10,"./pt-br":11,"./zh":13,"./zh-tw":12}],5:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -66,7 +118,7 @@ module.exports = {
 
 module.exports = require('../../locales/en');
 
-},{"../../locales/en":8}],4:[function(require,module,exports){
+},{"../../locales/en":17}],6:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -88,7 +140,29 @@ module.exports = require('../../locales/en');
 
 module.exports = require('../../locales/es');
 
-},{"../../locales/es":9}],5:[function(require,module,exports){
+},{"../../locales/es":18}],7:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/fr');
+
+},{"../../locales/fr":19}],8:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -138,7 +212,29 @@ var I18nData = function () {
 
 module.exports = I18nData;
 
-},{"./dictionaries":2,"underscore":11}],6:[function(require,module,exports){
+},{"./dictionaries":4,"underscore":25}],9:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/it');
+
+},{"../../locales/it":20}],10:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -160,7 +256,73 @@ module.exports = I18nData;
 
 module.exports = require('../../locales/ja');
 
-},{"../../locales/ja":10}],7:[function(require,module,exports){
+},{"../../locales/ja":21}],11:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/pt-br');
+
+},{"../../locales/pt-br":22}],12:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/zh-tw');
+
+},{"../../locales/zh-tw":23}],13:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/zh');
+
+},{"../../locales/zh":24}],14:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -223,7 +385,117 @@ module.exports = function () {
   return _class;
 }();
 
-},{"./i18n":5,"underscore":11}],8:[function(require,module,exports){
+},{"./i18n":8,"underscore":25}],15:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "الوئام",
+  "Conscientiousness" : "الاجتهاد",
+  "Extraversion" : "الانبساط",
+  "Neuroticism" : "مدى العاطفية",
+  "Openness" : "الانفتاح",
+  "Achievement striving" : "السعي للانجاز",
+  "Activity level" : "مستوى النشاط",
+  "Adventurousness" : "المغامرة",
+  "Altruism" : "الايثار",
+  "Anger" : "متقد",
+  "Anxiety" : "عرضة للقلق",
+  "Artistic interests" : "الهوايات  الفنية",
+  "Assertiveness" : "الاصرار",
+  "Cautiousness" : "الحذر",
+  "Cheerfulness" : "البهجة",
+  "Cooperation" : "التعاون",
+  "Depression" : "كئيب",
+  "Dutifulness" : "الطاعة",
+  "Emotionality" : "الانفعال",
+  "Excitement-seeking" : "البحث عن الاثارة",
+  "Friendliness" : "غير متحفظ",
+  "Gregariousness" : "الألفة",
+  "Imagination" : "الخيال",
+  "Immoderation" : "الغلو",
+  "Intellect" : "الذكاء",
+  "Liberalism" : "تحدي-السلطة",
+  "Modesty" : "التواضع",
+  "Morality" : "العند",
+  "Orderliness" : "النظام",
+  "Self-consciousness" : "الوعي الذاتي",
+  "Self-discipline" : "الانضباط الذاتي",
+  "Self-efficacy" : "كفاءة الذات",
+  "Sympathy" : "التعاطف",
+  "Trust" : "الثقة",
+  "Vulnerability" : "عرضة للتوتر",
+  "Challenge" : "التحدي",
+  "Closeness" : "التقارب",
+  "Curiosity" : "الفضول",
+  "Excitement" : "الاثارة",
+  "Harmony" : "الانسجام",
+  "Ideal" : "المثالية",
+  "Liberty" : "الحرية",
+  "Love" : "الحب",
+  "Practicality" : "العملية",
+  "Self-expression" : "التعبير عن الذات",
+  "Stability" : "الثبات",
+  "Structure" : "الانتظام",
+  "Conservation" : "المحافظة",
+  "Hedonism" : "التلذذ",
+  "Openness to change" : "الانفتاح  على  التغيير",
+  "Self-enhancement" : "تعزيز الذات",
+  "Self-transcendence" : "تنزيه الذات"
+}
+},{}],16:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "Angenehme Wesenszüge",
+  "Conscientiousness" : "Pflichtbewusstsein",
+  "Extraversion" : "Extraversion",
+  "Neuroticism" : "Emotionaler Bereich",
+  "Openness" : "Offen",
+  "Achievement striving" : "Nach Zielen strebend",
+  "Activity level" : "Aktivitätsstufe",
+  "Adventurousness" : "Abenteuerlustig",
+  "Altruism" : "Altruistisch",
+  "Anger" : "Hitzig",
+  "Anxiety" : "macht sich leicht Sorgen",
+  "Artistic interests" : "Künstlerische Interessen",
+  "Assertiveness" : "Durchsetzungsvermögen",
+  "Cautiousness" : "Vorsichtig",
+  "Cheerfulness" : "Fröhlich",
+  "Cooperation" : "Kooperativ",
+  "Depression" : "Melancholisch",
+  "Dutifulness" : "Pflichtbewusst",
+  "Emotionality" : "Emotionalität",
+  "Excitement-seeking" : "Nach Aufregungen suchend",
+  "Friendliness" : "Gerne ausgehend",
+  "Gregariousness" : "Gesellig",
+  "Imagination" : "Phantasie",
+  "Immoderation" : "Maßlos",
+  "Intellect" : "Intellekt",
+  "Liberalism" : "Aufmüpfig",
+  "Modesty" : "Bescheiden",
+  "Morality" : "Kompromisslos",
+  "Orderliness" : "Ordnungsliebend",
+  "Self-consciousness" : "Selbstbewusst",
+  "Self-discipline" : "Selbstdiszipliniert",
+  "Self-efficacy" : "Selbsteffizient",
+  "Sympathy" : "Sympathisch",
+  "Trust" : "Vertrauenswürdig",
+  "Vulnerability" : "Anfällig für Stress",
+  "Challenge" : "Herausforderung",
+  "Closeness" : "Verschwiegenheit",
+  "Curiosity" : "Neugier",
+  "Excitement" : "Aufregung",
+  "Harmony" : "Harmonie",
+  "Ideal" : "Ideal",
+  "Liberty" : "Freiheit",
+  "Love" : "Liebe",
+  "Practicality" : "Zweckmäßigkeit",
+  "Self-expression" : "Selbstdarstellung",
+  "Stability" : "Stabilität",
+  "Structure" : "Struktur",
+  "Conservation" : "Konservierung",
+  "Hedonism" : "Hedonismus",
+  "Openness to change" : "Offen für Veränderungen",
+  "Self-enhancement" : "Selbstverbesserung",
+  "Self-transcendence" : "Selbsttranszendenz"
+}
+},{}],17:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Agreeableness",
   "Altruism" : "Altruism",
@@ -260,7 +532,6 @@ module.exports={
   "Imagination" : "Imagination",
   "Intellect" : "Intellect",
   "Liberalism" : "Authority-challenging",
-
   "Liberty" : "Liberty",
   "Ideal" : "Ideal",
   "Love" : "Love",
@@ -273,131 +544,398 @@ module.exports={
   "Curiosity" : "Curiosity",
   "Excitement" : "Excitement",
   "Harmony" : "Harmony",
-
   "Conservation" : "Conservation",
   "Hedonism" : "Hedonism",
   "Openness to change" : "Openness to change",
   "Self-enhancement" : "Self-enhancement",
   "Self-transcendence" : "Self-transcendence"
 }
-
-},{}],9:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Amabilidad",
+  "Conscientiousness" : "Responsabilidad",
+  "Extraversion" : "Extroversión",
+  "Neuroticism" : "Rango emocional",
+  "Openness" : "Apertura a experiencias",
+  "Achievement striving" : "Necesidad de éxito",
+  "Activity level" : "Nivel de actividad",
+  "Adventurousness" : "Audacia",
   "Altruism" : "Altruismo",
-  "Cooperation" : "Cooperaci\u00f3n",
+  "Anger" : "Vehemencia",
+  "Anxiety" : "Tendencia a la preocupación",
+  "Artistic interests" : "Intereses artísticos",
+  "Assertiveness" : "Seguridad en uno mismo",
+  "Cautiousness" : "Cautela",
+  "Cheerfulness" : "Alegría",
+  "Cooperation" : "Cooperación",
+  "Depression" : "Melancolía",
+  "Dutifulness" : "Obediencia",
+  "Emotionality" : "Emocionalidad",
+  "Excitement-seeking" : "Búsqueda de emociones",
+  "Friendliness" : "Simpatía",
+  "Gregariousness" : "Sociabilidad",
+  "Imagination" : "Imaginación",
+  "Immoderation" : "Desmesura",
+  "Intellect" : "Intelecto",
+  "Liberalism" : "Desafío a la autoridad",
   "Modesty" : "Modestia",
   "Morality" : "Intransigencia",
-  "Sympathy" : "Compasi\u00f3n",
-  "Trust" : "Confianza",
-  "Conscientiousness" : "Responsabilidad",
-  "Achievement striving" : "Necesidad de \u00e9xito",
-  "Cautiousness" : "Cautela",
-  "Dutifulness" : "Obediencia",
   "Orderliness" : "Disciplina",
+  "Self-consciousness" : "Timidez",
   "Self-discipline" : "Autodisciplina",
   "Self-efficacy" : "Autoeficacia",
-  "Extraversion" : "Extroversi\u00f3n",
-  "Activity level" : "Nivel de actividad",
-  "Assertiveness" : "Seguridad en uno mismo",
-  "Cheerfulness" : "Alegr\u00eda",
-  "Excitement-seeking" : "B\u00fasqueda de emociones",
-  "Friendliness" : "Simpat\u00eda",
-  "Gregariousness" : "Sociabilidad",
-  "Neuroticism" : "Rango emocional",
-  "Anger" : "Vehemencia",
-  "Anxiety" : "Tendencia a la preocupaci\u00f3n",
-  "Depression" : "Melancol\u00eda",
-  "Immoderation" : "Desmesura",
-  "Self-consciousness" : "Timidez",
-  "Vulnerability" : "Susceptibilidad a la tensi\u00f3n",
-  "Openness" : "Apertura a experiencias",
-  "Adventurousness" : "Audacia",
-  "Artistic interests" : "Intereses art\u00edsticos",
-  "Emotionality" : "Emocionalidad",
-  "Imagination" : "Imaginaci\u00f3n",
-  "Intellect" : "Intelecto",
-  "Liberalism" : "Desaf\u00edo a la autoridad",
-
-  "Liberty" : "Libertad",
-  "Ideal" : "Ideal",
-  "Love" : "Amor",
-  "Practicality" : "Practicidad",
-  "Self-expression" : "Autoexpresi\u00f3n",
-  "Stability" : "Estabilidad",
-  "Structure" : "Estructura",
-  "Challenge" : "Desaf\u00edo",
+  "Sympathy" : "Compasión",
+  "Trust" : "Confianza",
+  "Vulnerability" : "Susceptibilidad a la tensión",
+  "Challenge" : "Desafío",
   "Closeness" : "Familiaridad",
   "Curiosity" : "Curiosidad",
   "Excitement" : "Entusiasmo",
-  "Harmony" : "Armon\u00eda",
-
-  "Conservation" : "Conservaci\u00f3n",
+  "Harmony" : "Armonía",
+  "Ideal" : "Ideal",
+  "Liberty" : "Libertad",
+  "Love" : "Amor",
+  "Practicality" : "Practicidad",
+  "Self-expression" : "Autoexpresión",
+  "Stability" : "Estabilidad",
+  "Structure" : "Estructura",
+  "Conservation" : "Conservación",
   "Hedonism" : "Hedonismo",
   "Openness to change" : "Apertura al cambio",
-  "Self-enhancement" : "Superaci\u00f3n personal",
+  "Self-enhancement" : "Superación personal",
   "Self-transcendence" : "Autotranscendencia"
 }
-
-},{}],10:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 module.exports={
-  "Agreeableness" : "人当たりの良さ",
-  "Altruism" : "利他主義",
-  "Cooperation" : "協調性",
-  "Modesty" : "謙虚さ",
-  "Morality" : "Uncompromising",
-  "Sympathy" : "共感度",
-  "Trust" : "信用度",
-  "Conscientiousness" : "勤勉さ",
-  "Achievement striving" : "達成努力",
-  "Cautiousness" : "注意深さ",
-  "Dutifulness" : "忠実さ",
-  "Orderliness" : "秩序性",
-  "Self-discipline" : "自制力",
-  "Self-efficacy" : "自己効力感",
+  "Agreeableness" : "Amabilité",
+  "Conscientiousness" : "Tempérament consciencieux",
+  "Extraversion" : "Extraversion",
+  "Neuroticism" : "Portée émotionnelle",
+  "Openness" : "Ouverture",
+  "Achievement striving" : "Persévérance",
+  "Activity level" : "Niveau d'activité",
+  "Adventurousness" : "Intrépidité",
+  "Altruism" : "Altruisme",
+  "Anger" : "Passion",
+  "Anxiety" : "Prompt à s'inquiéter",
+  "Artistic interests" : "Intérêt pour l'art",
+  "Assertiveness" : "Assertivité",
+  "Cautiousness" : "Circonspection",
+  "Cheerfulness" : "Gaieté",
+  "Cooperation" : "Coopération",
+  "Depression" : "Mélancolie",
+  "Dutifulness" : "Sens du devoir",
+  "Emotionality" : "Emotionnalité",
+  "Excitement-seeking" : "Recherche de sensations",
+  "Friendliness" : "Extraversion",
+  "Gregariousness" : "Convivialité",
+  "Imagination" : "Imagination",
+  "Immoderation" : "Immodération",
+  "Intellect" : "Intellect",
+  "Liberalism" : "Rebelle",
+  "Modesty" : "Modestie",
+  "Morality" : "Intransigeance",
+  "Orderliness" : "Ordre",
+  "Self-consciousness" : "Susceptibilité",
+  "Self-discipline" : "Autodiscipline",
+  "Self-efficacy" : "Efficacité personnelle",
+  "Sympathy" : "Empathie",
+  "Trust" : "Confiance",
+  "Vulnerability" : "Sujet au stress",
+  "Challenge" : "Combativité",
+  "Closeness" : "Comportement clanique",
+  "Curiosity" : "Curiosité",
+  "Excitement" : "Enthousiasme",
+  "Harmony" : "Harmonie",
+  "Ideal" : "Idéal",
+  "Liberty" : "Liberté",
+  "Love" : "Amour",
+  "Practicality" : "Pragmatisme",
+  "Self-expression" : "Extériorisation",
+  "Stability" : "Stabilité",
+  "Structure" : "Structure",
+  "Conservation" : "Conservatisme",
+  "Hedonism" : "Hédonisme",
+  "Openness to change" : "Ouverture au changement",
+  "Self-enhancement" : "Ambition personnelle",
+  "Self-transcendence" : "Dépassement de soi"
+}
+},{}],20:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "Disponibilità",
+  "Conscientiousness" : "Scrupolosità",
+  "Extraversion" : "Estroversione",
+  "Neuroticism" : "Gamma emotiva",
+  "Openness" : "Apertura",
+  "Achievement striving" : "Propensione al raggiungimento dello scopo",
+  "Activity level" : "Livello di attività",
+  "Adventurousness" : "Spirito d'avventura",
+  "Altruism" : "Altruismo",
+  "Anger" : "Irascibile",
+  "Anxiety" : "Incline alla preoccupazione",
+  "Artistic interests" : "Interessi artistici",
+  "Assertiveness" : "Assertività",
+  "Cautiousness" : "Prudenza",
+  "Cheerfulness" : "Positività",
+  "Cooperation" : "Cooperazione",
+  "Depression" : "Malinconico",
+  "Dutifulness" : "Responsabilità",
+  "Emotionality" : "Emotività",
+  "Excitement-seeking" : "Desiderio di stimoli",
+  "Friendliness" : "Cordialità",
+  "Gregariousness" : "Socialità",
+  "Imagination" : "Immaginazione",
+  "Immoderation" : "Smodato",
+  "Intellect" : "Curiosità intellettuale",
+  "Liberalism" : "Anticonvenzionale",
+  "Modesty" : "Modestia",
+  "Morality" : "Irremovibilità",
+  "Orderliness" : "Accuratezza",
+  "Self-consciousness" : "Autocosciente",
+  "Self-discipline" : "Autodisciplina",
+  "Self-efficacy" : "Sicurezza di sé",
+  "Sympathy" : "Compartecipazione",
+  "Trust" : "Fiducia",
+  "Vulnerability" : "Suscettibile allo stress",
+  "Challenge" : "Stimolo",
+  "Closeness" : "Vicinanza",
+  "Curiosity" : "Curiosità",
+  "Excitement" : "Eccitazione",
+  "Harmony" : "Armonia",
+  "Ideal" : "Ideale",
+  "Liberty" : "Libertà",
+  "Love" : "Amore",
+  "Practicality" : "Pragmatismo",
+  "Self-expression" : "Espressione della personalità",
+  "Stability" : "Stabilità",
+  "Structure" : "Struttura",
+  "Conservation" : "Tradizionalismo",
+  "Hedonism" : "Edonismo",
+  "Openness to change" : "Apertura al cambiamento",
+  "Self-enhancement" : "Successo personale",
+  "Self-transcendence" : "Impegno sociale"
+}
+},{}],21:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "協調性",
+  "Conscientiousness" : "誠実性",
   "Extraversion" : "外向性",
+  "Neuroticism" : "情緒不安定性",
+  "Openness" : "知的好奇心",
+  "Achievement striving" : "達成努力",
   "Activity level" : "活発度",
-  "Assertiveness" : "自己主張",
-  "Cheerfulness" : "明朗性",
-  "Excitement-seeking" : "刺激希求性",
-  "Friendliness" : "友情",
-  "Gregariousness" : "社交性",
-  "Neuroticism" : "繊細さ",
+  "Adventurousness" : "大胆性",
+  "Altruism" : "利他主義",
   "Anger" : "激情的",
   "Anxiety" : "心配性",
-  "Depression" : "悲観的",
-  "Immoderation" : "利己的",
-  "Self-consciousness" : "自意識過剰",
-  "Vulnerability" : "低ストレス耐性",
-  "Openness" : "好奇心の強さ",
-  "Adventurousness" : "大胆性",
   "Artistic interests" : "芸術的関心度",
+  "Assertiveness" : "自己主張",
+  "Cautiousness" : "注意深さ",
+  "Cheerfulness" : "明朗性",
+  "Cooperation" : "協力",
+  "Depression" : "悲観的",
+  "Dutifulness" : "忠実さ",
   "Emotionality" : "情動性",
+  "Excitement-seeking" : "刺激希求性",
+  "Friendliness" : "友好性",
+  "Gregariousness" : "社交性",
   "Imagination" : "想像力",
+  "Immoderation" : "利己的",
   "Intellect" : "思考力",
   "Liberalism" : "現状打破",
-
-  "Liberty" : "自由",
-  "Ideal" : "理想",
-  "Love" : "愛",
-  "Practicality" : "現実性",
-  "Self-expression" : "自己表現",
-  "Stability" : "安定",
-  "Structure" : "組織",
+  "Modesty" : "謙虚さ",
+  "Morality" : "強硬さ",
+  "Orderliness" : "秩序性",
+  "Self-consciousness" : "自意識過剰",
+  "Self-discipline" : "自制力",
+  "Self-efficacy" : "自己効力感",
+  "Sympathy" : "共感度",
+  "Trust" : "信用度",
+  "Vulnerability" : "低ストレス耐性",
   "Challenge" : "挑戦",
-  "Closeness" : "親密さ",
+  "Closeness" : "親密",
   "Curiosity" : "好奇心",
   "Excitement" : "興奮",
   "Harmony" : "調和",
-
-  "Conservation" : "保守性",
+  "Ideal" : "理想",
+  "Liberty" : "自由主義",
+  "Love" : "社会性",
+  "Practicality" : "実用主義",
+  "Self-expression" : "自己表現",
+  "Stability" : "安定性",
+  "Structure" : "仕組",
+  "Conservation" : "現状維持",
   "Hedonism" : "快楽主義",
-  "Openness to change" : "変化に対する許容性",
-  "Self-enhancement" : "自己高揚",
+  "Openness to change" : "変化許容性",
+  "Self-enhancement" : "自己増進",
   "Self-transcendence" : "自己超越"
 }
-
-},{}],11:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "Amabilidade",
+  "Conscientiousness" : "Escrupulosidade",
+  "Extraversion" : "Extroversão",
+  "Neuroticism" : "Faixa emocional",
+  "Openness" : "Abertura",
+  "Achievement striving" : "Esforço para realização",
+  "Activity level" : "Nível de atividade",
+  "Adventurousness" : "Desejo de aventura",
+  "Altruism" : "Altruísmo",
+  "Anger" : "Furioso",
+  "Anxiety" : "Propenso a se preocupar",
+  "Artistic interests" : "Interesses artísticos",
+  "Assertiveness" : "Assertividade",
+  "Cautiousness" : "Cautela",
+  "Cheerfulness" : "Bom Humor",
+  "Cooperation" : "Cooperação",
+  "Depression" : "Melancolia",
+  "Dutifulness" : "Respeito",
+  "Emotionality" : "Emotividade",
+  "Excitement-seeking" : "Busca de Empolgação",
+  "Friendliness" : "Extrovertido",
+  "Gregariousness" : "Gregarismo",
+  "Imagination" : "Imaginação",
+  "Immoderation" : "Imoderação",
+  "Intellect" : "Intelecto",
+  "Liberalism" : "Desafio à autoridade",
+  "Modesty" : "Modéstia",
+  "Morality" : "Determinação",
+  "Orderliness" : "Regularidade",
+  "Self-consciousness" : "Autoconsciência",
+  "Self-discipline" : "Autodisciplina",
+  "Self-efficacy" : "Autoeficiência",
+  "Sympathy" : "Simpatia",
+  "Trust" : "Confiança",
+  "Vulnerability" : "Suscetível ao stress",
+  "Challenge" : "Desafio",
+  "Closeness" : "Retraimento",
+  "Curiosity" : "Curiosidade",
+  "Excitement" : "Empolgação",
+  "Harmony" : "Harmonia",
+  "Ideal" : "Ideal",
+  "Liberty" : "Liberdade",
+  "Love" : "Amor",
+  "Practicality" : "Natureza prática",
+  "Self-expression" : "Expressão da própria personalidade",
+  "Stability" : "Estabilidade",
+  "Structure" : "Estrutura",
+  "Conservation" : "Conservação",
+  "Hedonism" : "Hedonismo",
+  "Openness to change" : "Abertura à mudança",
+  "Self-enhancement" : "Autocrescimento",
+  "Self-transcendence" : "Autotranscendência"
+}
+},{}],23:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "親和性",
+  "Conscientiousness" : "盡責性",
+  "Extraversion" : "外向性",
+  "Neuroticism" : "情緒範圍",
+  "Openness" : "開放性",
+  "Achievement striving" : "成就驅力",
+  "Activity level" : "活動水準",
+  "Adventurousness" : "冒險",
+  "Altruism" : "利他",
+  "Anger" : "暴躁",
+  "Anxiety" : "容易煩惱",
+  "Artistic interests" : "審美",
+  "Assertiveness" : "獨斷",
+  "Cautiousness" : "謹慎",
+  "Cheerfulness" : "快樂",
+  "Cooperation" : "合作",
+  "Depression" : "憂鬱",
+  "Dutifulness" : "守分",
+  "Emotionality" : "情緒豐富",
+  "Excitement-seeking" : "追求刺激",
+  "Friendliness" : "外向",
+  "Gregariousness" : "合群",
+  "Imagination" : "想像",
+  "Immoderation" : "不知節制",
+  "Intellect" : "智能",
+  "Liberalism" : "挑戰權威",
+  "Modesty" : "謙遜",
+  "Morality" : "不妥協",
+  "Orderliness" : "規律",
+  "Self-consciousness" : "自我意識",
+  "Self-discipline" : "自律",
+  "Self-efficacy" : "自我效能",
+  "Sympathy" : "同情心",
+  "Trust" : "信任",
+  "Vulnerability" : "抗壓性低",
+  "Challenge" : "挑戰",
+  "Closeness" : "封閉",
+  "Curiosity" : "好奇心",
+  "Excitement" : "興奮",
+  "Harmony" : "和諧",
+  "Ideal" : "理想",
+  "Liberty" : "自由",
+  "Love" : "愛",
+  "Practicality" : "務實",
+  "Self-expression" : "自我表達",
+  "Stability" : "穩定性",
+  "Structure" : "結構",
+  "Conservation" : "保守",
+  "Hedonism" : "享樂主義",
+  "Openness to change" : "接受改變的開放態度",
+  "Self-enhancement" : "自我提升",
+  "Self-transcendence" : "自我超越"
+}
+},{}],24:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "宜人性",
+  "Conscientiousness" : "尽责性",
+  "Extraversion" : "外向性",
+  "Neuroticism" : "情感范围",
+  "Openness" : "开放性",
+  "Achievement striving" : "追求成就",
+  "Activity level" : "活力程度",
+  "Adventurousness" : "冒险",
+  "Altruism" : "利他",
+  "Anger" : "暴躁",
+  "Anxiety" : "易焦虑",
+  "Artistic interests" : "审美",
+  "Assertiveness" : "独断性",
+  "Cautiousness" : "审慎",
+  "Cheerfulness" : "热情",
+  "Cooperation" : "合作",
+  "Depression" : "忧郁",
+  "Dutifulness" : "责任感",
+  "Emotionality" : "情感丰富",
+  "Excitement-seeking" : "寻求刺激",
+  "Friendliness" : "开朗",
+  "Gregariousness" : "合群性",
+  "Imagination" : "想象力",
+  "Immoderation" : "无节制",
+  "Intellect" : "智力",
+  "Liberalism" : "挑战权威",
+  "Modesty" : "谦逊",
+  "Morality" : "坚定",
+  "Orderliness" : "条理性",
+  "Self-consciousness" : "自我意识",
+  "Self-discipline" : "自律",
+  "Self-efficacy" : "自我效能",
+  "Sympathy" : "同情心",
+  "Trust" : "信任",
+  "Vulnerability" : "易受压力",
+  "Challenge" : "挑战",
+  "Closeness" : "亲密",
+  "Curiosity" : "好奇心",
+  "Excitement" : "刺激",
+  "Harmony" : "和谐",
+  "Ideal" : "理想",
+  "Liberty" : "自由",
+  "Love" : "爱",
+  "Practicality" : "实用",
+  "Self-expression" : "自我表现",
+  "Stability" : "稳定性",
+  "Structure" : "结构",
+  "Conservation" : "保守",
+  "Hedonism" : "享乐主义",
+  "Openness to change" : "对改变持开放态度",
+  "Self-enhancement" : "自我提高",
+  "Self-transcendence" : "自我超越"
+}
+},{}],25:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
