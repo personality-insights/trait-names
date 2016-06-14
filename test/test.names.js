@@ -56,6 +56,13 @@ describe('names', () => {
     assert.equal(traitNames.names()[1], 'الاجتهاد');
   });
 
+  it('get Korean trait name', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'ko' });
+    assert.equal(traitNames.name('Agreeableness'), '친화성');
+    assert.equal(traitNames.names().length, 52);
+    assert.equal(traitNames.names()[1], '성실성');
+  });
+
   it('get Chinese trait name', () => {
     const traitNames = new PersonalityTraitNames({ locale : 'zh' });
     assert.equal(traitNames.name('Agreeableness'), '宜人性');
