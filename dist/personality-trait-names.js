@@ -19,7 +19,7 @@
 
 module.exports = require('./lib/personality-trait-names');
 
-},{"./lib/personality-trait-names":14}],2:[function(require,module,exports){
+},{"./lib/personality-trait-names":15}],2:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -41,7 +41,7 @@ module.exports = require('./lib/personality-trait-names');
 
 module.exports = require('../../locales/ar');
 
-},{"../../locales/ar":15}],3:[function(require,module,exports){
+},{"../../locales/ar":16}],3:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -63,7 +63,7 @@ module.exports = require('../../locales/ar');
 
 module.exports = require('../../locales/de');
 
-},{"../../locales/de":16}],4:[function(require,module,exports){
+},{"../../locales/de":17}],4:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -89,6 +89,7 @@ module.exports = {
   'ar': require('./ar'),
   'it': require('./it'),
   'de': require('./de'),
+  'ko': require('./ko'),
   'zh': require('./zh'),
   'zh-tw': require('./zh-tw'),
   'fr': require('./fr'),
@@ -96,7 +97,7 @@ module.exports = {
 
 };
 
-},{"./ar":2,"./de":3,"./en":5,"./es":6,"./fr":7,"./it":9,"./ja":10,"./pt-br":11,"./zh":13,"./zh-tw":12}],5:[function(require,module,exports){
+},{"./ar":2,"./de":3,"./en":5,"./es":6,"./fr":7,"./it":9,"./ja":10,"./ko":11,"./pt-br":12,"./zh":14,"./zh-tw":13}],5:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -118,7 +119,7 @@ module.exports = {
 
 module.exports = require('../../locales/en');
 
-},{"../../locales/en":17}],6:[function(require,module,exports){
+},{"../../locales/en":18}],6:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -140,7 +141,7 @@ module.exports = require('../../locales/en');
 
 module.exports = require('../../locales/es');
 
-},{"../../locales/es":18}],7:[function(require,module,exports){
+},{"../../locales/es":19}],7:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -162,7 +163,7 @@ module.exports = require('../../locales/es');
 
 module.exports = require('../../locales/fr');
 
-},{"../../locales/fr":19}],8:[function(require,module,exports){
+},{"../../locales/fr":20}],8:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -212,7 +213,7 @@ var I18nData = function () {
 
 module.exports = I18nData;
 
-},{"./dictionaries":4,"underscore":25}],9:[function(require,module,exports){
+},{"./dictionaries":4,"underscore":27}],9:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -234,7 +235,7 @@ module.exports = I18nData;
 
 module.exports = require('../../locales/it');
 
-},{"../../locales/it":20}],10:[function(require,module,exports){
+},{"../../locales/it":21}],10:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -256,7 +257,29 @@ module.exports = require('../../locales/it');
 
 module.exports = require('../../locales/ja');
 
-},{"../../locales/ja":21}],11:[function(require,module,exports){
+},{"../../locales/ja":22}],11:[function(require,module,exports){
+'use strict';
+/*
+ * Copyright 2015-2016 IBM Corp. All Rights Reserved.
+#
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+#
+ *      http://www.apache.org/licenses/LICENSE-2.0
+#
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+'use static';
+
+module.exports = require('../../locales/ko');
+
+},{"../../locales/ko":23}],12:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -278,7 +301,7 @@ module.exports = require('../../locales/ja');
 
 module.exports = require('../../locales/pt-br');
 
-},{"../../locales/pt-br":22}],12:[function(require,module,exports){
+},{"../../locales/pt-br":24}],13:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -300,7 +323,7 @@ module.exports = require('../../locales/pt-br');
 
 module.exports = require('../../locales/zh-tw');
 
-},{"../../locales/zh-tw":23}],13:[function(require,module,exports){
+},{"../../locales/zh-tw":25}],14:[function(require,module,exports){
 'use strict';
 /*
  * Copyright 2015-2016 IBM Corp. All Rights Reserved.
@@ -322,7 +345,7 @@ module.exports = require('../../locales/zh-tw');
 
 module.exports = require('../../locales/zh');
 
-},{"../../locales/zh":24}],14:[function(require,module,exports){
+},{"../../locales/zh":26}],15:[function(require,module,exports){
 /**
  * Copyright 2016 IBM Corp. All Rights Reserved.
  *
@@ -385,7 +408,7 @@ module.exports = function () {
   return _class;
 }();
 
-},{"./i18n":8,"underscore":25}],15:[function(require,module,exports){
+},{"./i18n":8,"underscore":27}],16:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "الوئام",
   "Conscientiousness" : "الاجتهاد",
@@ -440,7 +463,7 @@ module.exports={
   "Self-enhancement" : "تعزيز الذات",
   "Self-transcendence" : "تنزيه الذات"
 }
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Angenehme Wesenszüge",
   "Conscientiousness" : "Pflichtbewusstsein",
@@ -495,7 +518,7 @@ module.exports={
   "Self-enhancement" : "Selbstverbesserung",
   "Self-transcendence" : "Selbsttranszendenz"
 }
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Agreeableness",
   "Altruism" : "Altruism",
@@ -550,7 +573,7 @@ module.exports={
   "Self-enhancement" : "Self-enhancement",
   "Self-transcendence" : "Self-transcendence"
 }
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Amabilidad",
   "Conscientiousness" : "Responsabilidad",
@@ -605,7 +628,7 @@ module.exports={
   "Self-enhancement" : "Superación personal",
   "Self-transcendence" : "Autotranscendencia"
 }
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Amabilité",
   "Conscientiousness" : "Tempérament consciencieux",
@@ -660,7 +683,7 @@ module.exports={
   "Self-enhancement" : "Ambition personnelle",
   "Self-transcendence" : "Dépassement de soi"
 }
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Disponibilità",
   "Conscientiousness" : "Scrupolosità",
@@ -715,7 +738,7 @@ module.exports={
   "Self-enhancement" : "Successo personale",
   "Self-transcendence" : "Impegno sociale"
 }
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "協調性",
   "Conscientiousness" : "誠実性",
@@ -770,7 +793,62 @@ module.exports={
   "Self-enhancement" : "自己増進",
   "Self-transcendence" : "自己超越"
 }
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
+module.exports={
+  "Agreeableness" : "친화성",
+  "Conscientiousness" : "성실성",
+  "Extraversion" : "외향성",
+  "Neuroticism" : "감정 범위",
+  "Openness" : "개방성",
+  "Achievement striving" : "성취 추구",
+  "Activity level" : "활동 레벨",
+  "Adventurousness" : "모험성",
+  "Altruism" : "이타성",
+  "Anger" : "맹렬",
+  "Anxiety" : "쉽게 걱정함",
+  "Artistic interests" : "예술적 흥미",
+  "Assertiveness" : "자신만만함",
+  "Cautiousness" : "신중함",
+  "Cheerfulness" : "쾌활",
+  "Cooperation" : "협동성",
+  "Depression" : "우울감",
+  "Dutifulness" : "순종성",
+  "Emotionality" : "정서성",
+  "Excitement-seeking" : "자극 탐색",
+  "Friendliness" : "외향적",
+  "Gregariousness" : "사교적",
+  "Imagination" : "상상력",
+  "Immoderation" : "무절제",
+  "Intellect" : "지력",
+  "Liberalism" : "권력에 저항",
+  "Modesty" : "겸손함",
+  "Morality" : "비타협성",
+  "Orderliness" : "질서 정연함",
+  "Self-consciousness" : "자의식",
+  "Self-discipline" : "자기 훈련",
+  "Self-efficacy" : "자기 효능감",
+  "Sympathy" : "동정",
+  "Trust" : "신뢰",
+  "Vulnerability" : "스트레스에 민감",
+  "Challenge" : "도전",
+  "Closeness" : "근사",
+  "Curiosity" : "호기심",
+  "Excitement" : "흥미",
+  "Harmony" : "조화",
+  "Ideal" : "이상",
+  "Liberty" : "자유",
+  "Love" : "사랑",
+  "Practicality" : "실용성",
+  "Self-expression" : "자기 표현",
+  "Stability" : "안정",
+  "Structure" : "구조",
+  "Conservation" : "요구사항",
+  "Hedonism" : "주요 5",
+  "Openness to change" : "보수성",
+  "Self-enhancement" : "쾌락주의",
+  "Self-transcendence" : "변화에 대한 개방성"
+}
+},{}],24:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "Amabilidade",
   "Conscientiousness" : "Escrupulosidade",
@@ -825,7 +903,7 @@ module.exports={
   "Self-enhancement" : "Autocrescimento",
   "Self-transcendence" : "Autotranscendência"
 }
-},{}],23:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "親和性",
   "Conscientiousness" : "盡責性",
@@ -880,7 +958,7 @@ module.exports={
   "Self-enhancement" : "自我提升",
   "Self-transcendence" : "自我超越"
 }
-},{}],24:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 module.exports={
   "Agreeableness" : "宜人性",
   "Conscientiousness" : "尽责性",
@@ -935,7 +1013,7 @@ module.exports={
   "Self-enhancement" : "自我提高",
   "Self-transcendence" : "自我超越"
 }
-},{}],25:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
