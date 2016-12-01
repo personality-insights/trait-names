@@ -10,7 +10,7 @@ Obtain names for Personality Insights' traits.
 
 ## Getting Started
 
-1. Require and instance `personality-trait-names` component
+1. Require an instance `personality-trait-names` component
 
   ```JavaScript
   const PersonalityTraitNames = require('personality-trait-names');
@@ -24,8 +24,6 @@ Obtain names for Personality Insights' traits.
   ```
 
 3. Render names somewhere! Try rendering them as cards!
-
-See the complete [example code][example_code] or [try it live][live_example]
 
 ## More Features
 
@@ -45,5 +43,3 @@ Definitions:
  - `Options` are options for the trait descriptions component. Available options are:
    - `locale` - A `String` with the locale used to generate the names.
 
- [example_code]: https://github.com/personality-insights/trait-names/blob/master/examples/example.html
- [live_example]: https://rawgit.com/personality-insights/trait-names/master/examples/example.html
