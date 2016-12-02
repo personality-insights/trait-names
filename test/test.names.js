@@ -29,6 +29,7 @@ describe('names', () => {
   });
 
   it('get English trait name', () => {
+    //AW - added version to options
     const traitNames = new PersonalityTraitNames({ locale : 'en' });
     assert.equal(traitNames.name('Agreeableness'), 'Agreeableness');
     assert.equal(traitNames.names().length, 52);
@@ -103,6 +104,35 @@ describe('names', () => {
     assert.equal(traitNames.name('Agreeableness'), 'Amabilité');
     assert.equal(traitNames.names().length, 52);
     assert.equal(traitNames.names()[1], 'Tempérament consciencieux');
+  });
+
+  // V3 tests
+  it('get English trait name for V3', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'en', version : 'v3' });
+    assert.equal(traitNames.name('big5_agreeableness'), 'Agreeableness');
+    assert.equal(traitNames.names().length, 52);
+    //assert.equal(traitNames.names()[1], 'Altruism');
+  });
+
+  it('get Spanish trait name for V3', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'es', version : 'v3' });
+    assert.equal(traitNames.name('big5_agreeableness'), 'Amabilidad');
+    assert.equal(traitNames.names().length, 52);
+    //assert.equal(traitNames.names()[1], 'Responsabilidad');
+  });
+
+  it('get Japanese trait name for V3', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'ja', version : 'v3' });
+    assert.equal(traitNames.name('big5_agreeableness'), '協調性');
+    assert.equal(traitNames.names().length, 52);
+    //assert.equal(traitNames.names()[1], '誠実性');
+  });
+
+  it('get Arabic trait name for V3', () => {
+    const traitNames = new PersonalityTraitNames({ locale : 'ar', version : 'v3' });
+    assert.equal(traitNames.name('big5_agreeableness'), 'الوئام');
+    assert.equal(traitNames.names().length, 52);
+    //assert.equal(traitNames.names()[1], 'الاجتهاد');
   });
 
 
