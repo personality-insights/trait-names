@@ -43,3 +43,7 @@ Definitions:
  - `Options` are options for the trait descriptions component. Available options are:
    - `locale` - A `String` with the locale used to generate the names.
 
+## CHANGELOG
+
+__12-01-2016__
+ * Added v3 traits
