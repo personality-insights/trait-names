@@ -18,10 +18,13 @@ $ npm install personality-trait-names
 
 ```JavaScript
   var PersonalityTraitNames = require('personality-trait-names');
-  var traitIdsToNames = new PersonalityTraitNames({ locale: 'es', version: 'v3' });
 
-  var big5AgreeablenessTraitName  = traitIdsToNames.name('big5_agreeableness');
-  console.log("The trait name for big5_agreeableness is " + big5AgreeablenessTraitName);
+  // version refers to the version of Watson Personality Insights to use, v2 or v3
+  var traitNames = new PersonalityTraitNames({ locale: 'es', version: 'v3' });
+
+  // retrieve the trait name for a specified trait id (e.g., 'big5_agreeableness')
+  var big5AgreeablenessTraitName  = traitNames.name('big5_agreeableness');
+  console.log("The trait name for trait id big5_agreeableness is " + big5AgreeablenessTraitName);
 
   ```
 
