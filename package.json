@@ -4,9 +4,12 @@
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "/lib/index.js",
   "scripts": {
-    "test": "npm run jshint && (npm run codecov || true)",
-    "jshint": "jshint --exclude ./node_modules/",
-    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "npm run lint && npm run codecov",
+    "lint": "eslint .",
+    "autofix": "eslint . --fix",
+    "codecov": "istanbul cover mocha test && codecov"
   },
   "repository": {
     "type": "git",
@@ -33,8 +36,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
+    "eslint": "^3.11.1",
     "istanbul": "^0.4.3",
-    "jshint": "^2.9.2",
     "mocha": "^2.5.3"
   }
 }
