@@ -2,9 +2,9 @@
   "name": "personality-trait-names",
   "version": "2.0.0",
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
-  "main": "index.js",
+  "main": "/lib/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node /lib/index.js",
     "test": "npm run jshint && (npm run codecov || true)",
     "jshint": "jshint --exclude ./node_modules/",
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
@@ -22,6 +22,7 @@
     "i18n"
   ],
   "author": "Ary Pablo Batista <arypbatista@gmail.com>",
+  "contributor": "April Webster <aprilweb@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/personality-insights/trait-names/issues"
