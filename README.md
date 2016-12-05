@@ -24,7 +24,7 @@ $ npm install personality-trait-names
 
   // retrieve the trait name for a specified trait id (e.g., 'big5_agreeableness')
   var big5AgreeablenessTraitName  = traitNames.name('big5_agreeableness');
-  console.log('The trait name for trait id big5_agreeableness is '' + big5AgreeablenessTraitName);
+  console.log('The trait name for trait id big5_agreeableness is ' + big5AgreeablenessTraitName);
 
   ```
 
