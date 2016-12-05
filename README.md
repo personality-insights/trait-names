@@ -8,38 +8,32 @@
 
 Obtain names for Personality Insights' traits.
 
-## Getting Started
+## Installation
 
-1. Require an instance `personality-trait-names` component
+```sh
+$ npm install personality-trait-names
+```
 
-  ```JavaScript
-  const PersonalityTraitNames = require('personality-trait-names');
-  const traitNames = new PersonalityTraitNames({ locale: 'es' });
+## Usage
+
+```JavaScript
+  var PersonalityTraitNames = require('personality-trait-names');
+
+  // version refers to the version of Watson Personality Insights to use, v2 or v3
+  var traitNames = new PersonalityTraitNames({ locale: 'es', version: 'v3' });
+
+  // retrieve the trait name for a specified trait id (e.g., 'big5_agreeableness')
+  var big5AgreeablenessTraitName  = traitNames.name('big5_agreeableness');
+  console.log('The trait name for trait id big5_agreeableness is ' + big5AgreeablenessTraitName);
+
   ```
 
-2. Get your trait name
+## License
 
-  ```JavaScript
-  const opennessName  = traitNames.name('Structure');
-  ```
+This library is licensed under Apache 2.0. Full license text is
+available in [LICENSE](LICENSE).
 
-3. Render names somewhere! Try rendering them as cards!
+## Changelog
 
-## More Features
-
-There are more features available such as:
-
-- Including the component as a browser script. Component will be exported as the
-global variable `PersonalityTraitNames`.
-
-## API Methods
-
-The available methods are the following ones:
-  - `constructor :: (Options) -> PersonalityTraitNames` - Obtain an instance of `PersonalityTraitNames`.
-  - `name :: (TraitID) -> String` - Obtain the name for the given `TraitID`.
-
-Definitions:
- - `TraitID` is a `String` ID from IBM Watson Personality Insights traits.
- - `Options` are options for the trait descriptions component. Available options are:
-   - `locale` - A `String` with the locale used to generate the names.
-
+__12-01-2016__
+ * Added v3 traits
