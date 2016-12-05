@@ -27,6 +27,9 @@
     "url": "https://github.com/personality-insights/trait-names/issues"
   },
   "homepage": "https://github.com/personality-insights/trait-names#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
