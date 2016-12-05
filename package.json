@@ -4,7 +4,6 @@
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "/lib/index.js",
   "scripts": {
-    "start": "node /lib/index.js",
     "test": "npm run jshint && (npm run codecov || true)",
     "jshint": "jshint --exclude ./node_modules/",
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
@@ -28,9 +27,6 @@
     "url": "https://github.com/personality-insights/trait-names/issues"
   },
   "homepage": "https://github.com/personality-insights/trait-names#readme",
-  "dependencies": {
-    "underscore": "^1.8.3"
-  },
   "devDependencies": {
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
