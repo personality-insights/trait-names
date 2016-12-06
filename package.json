@@ -4,7 +4,7 @@
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "/lib/index.js",
   "scripts": {
-    "compile": "browserify lib/index.js -o src/index.js -t [ babelify --presets [ es2015 ] ]",
+    "compile": "browserify -t [ babelify --presets [ es2015 ] ] src/index.js -o lib/index.js",
     "prepublish": "npm run compile",
     "test": "npm run lint && npm run codecov",
     "lint": "eslint .",
@@ -23,8 +23,7 @@
     "translated",
     "i18n"
   ],
-  "author": "Ary Pablo Batista <arypbatista@gmail.com>",
-  "contributor": "April Webster <aprilweb@gmail.com>",
+  "author": "IBM Corp.",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/personality-insights/trait-names/issues"
@@ -40,6 +39,6 @@
     "codecov": "^1.0.1",
     "eslint": "^3.11.1",
     "istanbul": "^0.4.3",
-    "mocha": "^2.5.3"
+    "mocha": "^3.2.0"
   }
 }

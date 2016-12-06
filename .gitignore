@@ -1,5 +1,6 @@
 coverage
-lib
+lib/*
+!lib/.gitkeep
 node_modules
 npm-debug.log*
 .npm
