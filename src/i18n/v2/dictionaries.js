@@ -17,16 +17,16 @@
 'use strict';
 
 module.exports = {
-    'en' : require('./en'),
-    'es' : require('./es'),
-    'ja' : require('./ja'),
-    'ar' : require('./ar'),
-    'it' : require('./it'),
-    'de' : require('./de'),
-    'ko' : require('./ko'),
-    'zh' : require('./zh'),
-    'zh-tw' : require('./zh-tw'),
-    'fr' : require('./fr'),
-    'pt-br' : require('./pt-br'),
+  'en' : require('./en'),
+  'es' : require('./es'),
+  'ja' : require('./ja'),
+  'ar' : require('./ar'),
+  'it' : require('./it'),
+  'de' : require('./de'),
+  'ko' : require('./ko'),
+  'zh' : require('./zh'),
+  'zh-tw' : require('./zh-tw'),
+  'fr' : require('./fr'),
+  'pt-br' : require('./pt-br'),
   
 };

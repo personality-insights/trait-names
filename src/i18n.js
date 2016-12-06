@@ -16,31 +16,30 @@
 
 'use strict';
 
-
-const PersonalityTraitNames = require('./personality-trait-names');
+const PersonalityTraitNames = require('./index');
 
 class I18nDeprecated {
-    constructor() {
-        this.locale = '';
-    }
+  constructor() {
+    this.locale = '';
+  }
 
-    setLocale(locale) {
-        this.locale = locale;
-    }
+  setLocale(locale) {
+    this.locale = locale;
+  }
 
-    getLocale() {
-        return this.locale;
-    }
+  getLocale() {
+    return this.locale;
+  }
 
-    getCatalog() {
-        const traitNames = new PersonalityTraitNames({ locale: this.locale });
-        return traitNames._data;
-    }
+  getCatalog() {
+    const traitNames = new PersonalityTraitNames({locale: this.locale});
+    return traitNames._data;
+  }
 
-    __(traitId) {
-        const traitNames = new PersonalityTraitNames({ locale: this.locale });
-        return traitNames.name(traitId);
-    }
+  __(traitId) {
+    const traitNames = new PersonalityTraitNames({locale: this.locale});
+    return traitNames.name(traitId);
+  }
 }
 
 let translator = new I18nDeprecated();

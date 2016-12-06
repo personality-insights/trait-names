@@ -4,7 +4,7 @@
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "/lib/index.js",
   "scripts": {
-    "compile": "babel --presets es2015 -d lib/ src/",
+    "compile": "browserify lib/index.js -o src/index.js -t [ babelify --presets [ es2015 ] ]",
     "prepublish": "npm run compile",
     "test": "npm run lint && npm run codecov",
     "lint": "eslint .",
@@ -34,6 +34,8 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
     "chai": "^3.5.0",
     "codecov": "^1.0.1",
     "eslint": "^3.11.1",

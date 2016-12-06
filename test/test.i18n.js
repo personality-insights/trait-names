@@ -20,37 +20,37 @@ let assert = require('chai').assert;
 
 describe('i18n', () => {
 
-    it('translate trait name into english', (done) => {
-        let i18n  = require('../src/i18n');
-        i18n.setLocale('en');
-        assert.equal(i18n.getLocale(), 'en');
+  it('translate trait name into english', (done) => {
+    let i18n  = require('../src/i18n');
+    i18n.setLocale('en');
+    assert.equal(i18n.getLocale(), 'en');
 
-        assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
-        assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
+    assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
 
-        done();
-    });
+    done();
+  });
 
-    it('translate trait name with unknown locale, defaults to English', (done) => {
-        let i18n  = require('../src/i18n');
-        i18n.setLocale('zz');
-        assert.equal(i18n.getLocale(), 'zz');
+  it('translate trait name with unknown locale, defaults to English', (done) => {
+    let i18n  = require('../src/i18n');
+    i18n.setLocale('zz');
+    assert.equal(i18n.getLocale(), 'zz');
 
-        assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
-        assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
+    assert.equal(i18n.__('Agreeableness'), 'Agreeableness');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Emotional range');
 
-        done();
-    });
+    done();
+  });
 
-    it('translate trait name into spanish', (done) => {
-        let i18n  = require('../src/i18n');
-        i18n.setLocale('es');
-        assert.equal(i18n.getLocale(), 'es');
+  it('translate trait name into spanish', (done) => {
+    let i18n  = require('../src/i18n');
+    i18n.setLocale('es');
+    assert.equal(i18n.getLocale(), 'es');
 
-        assert.equal(i18n.__('Agreeableness'), 'Amabilidad');
-        assert.equal(i18n.getCatalog()['Neuroticism'], 'Rango emocional');
+    assert.equal(i18n.__('Agreeableness'), 'Amabilidad');
+    assert.equal(i18n.getCatalog()['Neuroticism'], 'Rango emocional');
 
-        done();
-    });
+    done();
+  });
 
 });

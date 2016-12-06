@@ -1,9 +1,10 @@
 language: node_js
-node_js:
-- "6.1"
-script:
-- npm test
+dist: trusty
+sudo: required
+node_js: 6
+script: npm test
+cache:
+  directories:
+  - node_modules
 notifications:
   email: false
-after_success:
-  - bash <(curl -s https://codecov.io/bash)

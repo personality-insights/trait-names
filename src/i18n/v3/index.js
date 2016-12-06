@@ -16,24 +16,23 @@
 
 'use strict';
 
-const _ = require('underscore'),
-    contains = _.contains,
-    extend = _.extend,
-    keys = _.keys;
+const _ = require('underscore');
+const contains = _.contains;
+const extend = _.extend;
+const keys = _.keys;
 
 const dictionaries = require('./dictionaries');
 
 
 class I18nData {
+  constructor(locale) {
+    this._locale = contains(keys(dictionaries), locale) ? locale : 'en';
+    this._dictionary = dictionaries[this._locale];
+  }
 
-    constructor(locale) {
-        this._locale = contains(keys(dictionaries), locale) ? locale : 'en';
-        this._dictionary = dictionaries[this._locale];
-    }
-
-    data() {
-        return extend({}, this._dictionary);
-    }
+  data() {
+    return extend({}, this._dictionary);
+  }
 }
 
 
