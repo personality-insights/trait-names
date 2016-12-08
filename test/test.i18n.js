@@ -21,7 +21,7 @@ let assert = require('chai').assert;
 describe('i18n', () => {
 
   it('translate trait name into english', (done) => {
-    let i18n  = require('../src/i18n');
+    let i18n  = require('../lib/i18n');
     i18n.setLocale('en');
     assert.equal(i18n.getLocale(), 'en');
 
@@ -32,7 +32,7 @@ describe('i18n', () => {
   });
 
   it('translate trait name with unknown locale, defaults to English', (done) => {
-    let i18n  = require('../src/i18n');
+    let i18n  = require('../lib/i18n');
     i18n.setLocale('zz');
     assert.equal(i18n.getLocale(), 'zz');
 
@@ -43,7 +43,7 @@ describe('i18n', () => {
   });
 
   it('translate trait name into spanish', (done) => {
-    let i18n  = require('../src/i18n');
+    let i18n  = require('../lib/i18n');
     i18n.setLocale('es');
     assert.equal(i18n.getLocale(), 'es');
 
