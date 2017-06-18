@@ -14,6 +14,7 @@ deploy:
   provider: npm
   email: germanattanasio@gmail.com
   api_key: "${npm_api_key}"
+  skip_cleanup: true
   on:
     tags: true
     repo: personality-insights/trait-names
