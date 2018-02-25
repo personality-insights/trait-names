@@ -4,7 +4,7 @@
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "node_modules/.bin/browserify -t [ babelify --presets [ es2015 ] ] --standalone PersonalityTraitNames lib/index.js -o dist/index.js",
+    "compile": "node_modules/.bin/webpack",
     "prepublish": "npm run compile",
     "test": "npm run lint && npm run codecov",
     "lint": "eslint .",
@@ -30,16 +30,19 @@
   },
   "homepage": "https://github.com/personality-insights/trait-names#readme",
   "dependencies": {
-    "underscore": "^1.8.3"
+    "lodash.pairs": "^3.0.1",
+    "lodash.pick": "^4.4.0"
   },
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "babelify": "^7.3.0",
-    "browserify": "^13.1.1",
-    "chai": "^3.5.0",
-    "codecov": "^1.0.1",
-    "eslint": "^3.11.1",
-    "istanbul": "^0.4.3",
-    "mocha": "^3.2.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.3.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "eslint": "^4.18.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
+    "webpack": "^3.11.0"
   }
 }
