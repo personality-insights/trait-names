@@ -1,6 +1,6 @@
 {
   "name": "personality-trait-names",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "lib/index.js",
   "scripts": {
@@ -35,14 +35,14 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.4",
     "babel-minify-webpack-plugin": "^0.3.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "codecov": "^3.0.0",
-    "eslint": "^4.18.1",
+    "eslint": "^4.19.0",
     "istanbul": "^0.4.5",
-    "mocha": "^5.0.1",
+    "mocha": "^5.0.4",
     "webpack": "^3.11.0"
   }
 }
