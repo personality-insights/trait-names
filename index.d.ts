@@ -7,8 +7,11 @@ declare class PersonalityTraitNames {
   constructor(options?: { locale?: Locale, version?: Version });
 
   defaultOptions(): {
-    locale: Locale
+    locale: Locale,
+    version: Version
   };
+
+  setLocale(locale: Locale): void;
 
   name(traitId: string): string;
 
