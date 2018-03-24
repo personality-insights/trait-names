@@ -1,6 +1,6 @@
 {
   "name": "personality-trait-names",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Obtain trait names for IBM Watson Personality Insights traits.",
   "main": "lib/index.js",
   "scripts": {
